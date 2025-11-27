@@ -1,0 +1,235 @@
+.notifications-page {
+  min-height: 100vh;
+  background: var(--gray-lighter);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: var(--white);
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.filter-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--gray);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.filter-tab:hover {
+  background: var(--gray-lighter);
+  color: var(--dark);
+}
+
+.filter-tab.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.tab-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.filter-tab.active .tab-badge {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Notifications List */
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification-item {
+  display: flex;
+  gap: 1.5rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+  position: relative;
+}
+
+.notification-item.unread {
+  border-left: 4px solid var(--primary);
+  background: linear-gradient(to right, rgba(99, 102, 241, 0.05), var(--white));
+}
+
+.notification-item:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.notification-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.notification-icon.purple {
+  background: var(--primary-gradient);
+}
+
+.notification-icon.blue {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.notification-icon.orange {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.notification-icon.teal {
+  background: linear-gradient(135deg, #0ba360 0%, #3cba92 100%);
+}
+
+.notification-icon.pink {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.notification-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.notification-header h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0;
+}
+
+.notification-time {
+  font-size: 0.875rem;
+  color: var(--gray);
+  white-space: nowrap;
+}
+
+.notification-message {
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 0 0 0.75rem 0;
+}
+
+.notification-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.notification-link:hover {
+  gap: 0.5rem;
+  color: var(--primary-dark);
+}
+
+.notification-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: var(--gray-lighter);
+  border-radius: var(--radius);
+  color: var(--gray);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.action-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.action-btn.delete:hover {
+  background: var(--error);
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .filter-tabs {
+    flex-direction: column;
+  }
+  
+  .notification-item {
+    flex-direction: column;
+  }
+  
+  .notification-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .notification-time {
+    white-space: normal;
+  }
+  
+  .notification-actions {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
