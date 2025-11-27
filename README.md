@@ -24,8 +24,8 @@ EventPulse is a comprehensive, full-stack event management platform designed spe
 - **Password:** Admin123#
  
 **Student Account:**
-- **Email:** student@gmail.com
-- **Password:** Student123#
+- Create your own account to explore student features!
+- Click "Sign Up" and register as a student to see event discovery, registration, QR codes, and more
  
 ---
  
@@ -394,6 +394,7 @@ If you have any questions or need help with the project:
  
 ---
  
-**Last Updated:** January 2025  
+**Last Updated:** November 2025  
 **Version:** 1.0.0  
 **Status:** ✅ Production Ready
+
