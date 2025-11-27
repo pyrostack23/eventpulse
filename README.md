@@ -31,11 +31,14 @@ EventPulse is a comprehensive, full-stack event management platform designed spe
  
 ## 📸 Screenshots
  
-### Mobile View
-<img src="image.png" alt="Mobile Interface" width="300">
- 
-### Desktop View
-![Desktop Interface](image-1.png)
+<div align="center">
+  <img src="image.png" alt="Mobile Interface" width="300" style="margin-right: 20px;">
+  <img src="image-1.png" alt="Desktop Interface" width="600">
+</div>
+
+<p align="center">
+  <em>Mobile View</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Desktop View</em>
+</p>
  
 ---
  
@@ -397,4 +400,5 @@ If you have any questions or need help with the project:
 **Last Updated:** November 2025  
 **Version:** 1.0.0  
 **Status:** ✅ Production Ready
+
 
