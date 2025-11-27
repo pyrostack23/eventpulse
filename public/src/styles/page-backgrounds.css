@@ -1,0 +1,115 @@
+/* Global Page Background Fix - Make pages transparent to show gradient */
+
+/* All page wrappers */
+.events-page,
+.event-detail-page,
+.dashboard-page,
+.profile-page,
+.my-events-page,
+.notifications-page,
+.analytics-page,
+.admin-panel,
+.qr-scanner-page,
+.auth-page {
+  background: transparent !important;
+}
+
+/* Page headers - keep white with slight transparency */
+.page-header {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Cards - enhanced with glassmorphism */
+.event-card,
+.stat-card,
+.profile-card,
+.notification-card,
+.analytics-card,
+.card,
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset !important;
+  transition: all 0.3s ease !important;
+}
+
+.event-card:hover,
+.stat-card:hover,
+.profile-card:hover,
+.notification-card:hover,
+.analytics-card:hover,
+.card:hover,
+.dashboard-card:hover {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 
+    0 10px 15px -3px rgba(99, 102, 241, 0.1),
+    0 4px 6px -2px rgba(99, 102, 241, 0.05),
+    0 0 0 1px rgba(99, 102, 241, 0.1) inset !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Sections that should remain white */
+.metrics,
+.main-footer {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Add subtle decorative gradient to sections */
+.section {
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(99, 102, 241, 0.2) 50%,
+    transparent 100%
+  );
+  opacity: 0.5;
+}
+
+/* Enhanced buttons */
+button.btn,
+a.btn {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+button.btn:hover,
+a.btn:hover {
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Input fields enhancement */
+input.form-input,
+textarea.form-input,
+select.form-select {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  transition: all 0.3s ease !important;
+}
+
+input.form-input:focus,
+textarea.form-input:focus,
+select.form-select:focus {
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(99, 102, 241, 0.5) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+}

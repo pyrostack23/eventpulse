@@ -1,0 +1,342 @@
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS - GPU ACCELERATION
+   ============================================ */
+
+/* GPU-Accelerated Animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  will-change: transform;
+}
+
+/* Optimize transforms and opacity */
+.optimized-animation {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Smooth scrolling with GPU */
+.smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Lazy loading image states */
+.lazy-image {
+  will-change: opacity, filter;
+  transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.lazy-image.loading {
+  opacity: 0.5;
+  filter: blur(10px);
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+  filter: none;
+}
+
+/* Virtual list optimizations */
+.virtual-list {
+  contain: layout style paint;
+  will-change: scroll-position;
+}
+
+.virtual-list-item {
+  contain: layout style paint;
+  will-change: transform;
+}
+
+/* Debounced input optimization */
+.debounced-input {
+  will-change: contents;
+}
+
+/* Optimize card animations */
+.event-card,
+.stat-card,
+.dashboard-section {
+  contain: layout style paint;
+  will-change: transform;
+}
+
+/* Optimize hover states */
+.event-card:hover,
+.stat-card:hover {
+  transform: translateZ(0) translateY(-8px);
+  -webkit-transform: translateZ(0) translateY(-8px);
+}
+
+/* Optimize modal animations */
+.modal-overlay {
+  will-change: opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.modal-content {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize navbar */
+.navbar {
+  contain: layout style;
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize bottom nav */
+.mobile-bottom-nav {
+  contain: layout style;
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize carousel */
+.carousel-track {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize progress bars */
+.progress-fill,
+.availability-fill,
+.strength-fill {
+  will-change: width;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize count-up animations */
+.count-up {
+  will-change: contents;
+  contain: layout style;
+}
+
+/* Optimize timeline items */
+.timeline-item {
+  contain: layout style paint;
+  will-change: transform, opacity;
+}
+
+/* Optimize notification items */
+.notification-item {
+  contain: layout style paint;
+  will-change: transform, opacity;
+}
+
+/* Reduce paint on scroll */
+.scroll-container {
+  contain: layout style paint;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Optimize chart containers */
+.chart-wrapper {
+  contain: layout style paint;
+  will-change: transform, opacity;
+}
+
+/* Optimize skeleton loaders */
+.skeleton {
+  contain: layout style paint;
+  will-change: transform;
+}
+
+/* Optimize dropdown menus */
+.user-menu,
+.notifications-dropdown {
+  contain: layout style;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize form inputs */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  will-change: border-color, box-shadow;
+}
+
+/* Optimize button states */
+.btn {
+  will-change: transform, box-shadow;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.btn:hover {
+  transform: translateZ(0) translateY(-2px);
+  -webkit-transform: translateZ(0) translateY(-2px);
+}
+
+/* Optimize icon animations */
+.icon-success,
+.icon-error {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize badge animations */
+.badge-new {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize swipe gestures */
+.swipeable-card {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize pull-to-refresh */
+.pull-to-refresh-indicator {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Content visibility for off-screen content */
+.off-screen {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+/* Optimize image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Optimize text rendering */
+body {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimize backdrop filters */
+.navbar,
+.mobile-bottom-nav,
+.modal-overlay,
+.user-menu,
+.notifications-dropdown {
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* Reduce motion for performance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    will-change: auto !important;
+  }
+}
+
+/* Low-end device optimizations */
+@media (max-width: 768px) and (max-resolution: 1dppx) {
+  /* Disable expensive effects on low-end devices */
+  .navbar,
+  .mobile-bottom-nav,
+  .modal-overlay,
+  .user-menu,
+  .notifications-dropdown {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.98);
+  }
+
+  /* Simplify shadows */
+  .event-card,
+  .stat-card,
+  .dashboard-section {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Disable blur effects */
+  .lazy-image.loading {
+    filter: none;
+  }
+}
+
+/* Print optimizations */
+@media print {
+  * {
+    will-change: auto !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Optimize for high refresh rate displays */
+@media (min-resolution: 120dpi) {
+  .optimized-animation {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Contain layout shifts */
+.layout-stable {
+  contain: layout;
+}
+
+.paint-stable {
+  contain: paint;
+}
+
+.size-stable {
+  contain: size;
+}
+
+.strict-stable {
+  contain: strict;
+}
+
+/* Optimize font loading */
+@font-face {
+  font-display: swap;
+}
+
+/* Optimize background images */
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Optimize gradients */
+.gradient-bg {
+  will-change: background-position;
+}
+
+/* Optimize filters */
+.filtered {
+  will-change: filter;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}

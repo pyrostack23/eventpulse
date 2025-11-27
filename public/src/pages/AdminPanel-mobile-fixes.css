@@ -1,0 +1,447 @@
+/* ============================================
+   ADMIN PANEL - MOBILE OPTIMIZATIONS
+   Perfect mobile experience for admin panel
+   ============================================ */
+
+@media (max-width: 768px) {
+  
+  /* ========== HEADER FIXES ========== */
+  .admin-header {
+    padding: 2rem 0;
+  }
+  
+  .admin-header > .container > div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
+  
+  /* Hide QR Scanner button in header on mobile */
+  .admin-header .btn {
+    display: none !important;
+  }
+  
+  /* ========== TABS OPTIMIZATION ========== */
+  .admin-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .admin-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .admin-tab {
+    flex-shrink: 0;
+    min-width: 120px;
+    padding: 0.75rem 1rem;
+    font-size: 0.8125rem;
+  }
+  
+  .admin-tab svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Show QR Scanner tab on mobile */
+  .qr-scanner-tab {
+    display: flex !important;
+  }
+  
+  /* ========== CONTENT HEADER FIXES ========== */
+  .content-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .content-header .btn,
+  .content-header .search-input {
+    width: 100%;
+  }
+  
+  /* ========== STATS GRID OPTIMIZATION ========== */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1.25rem;
+  }
+  
+  .stat-content h3 {
+    font-size: 2rem;
+  }
+  
+  .stat-breakdown {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .stat-breakdown span {
+    font-size: 0.75rem;
+  }
+  
+  /* ========== QUICK ACTIONS ========== */
+  .quick-actions {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .action-btn {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  /* ========== TABLE CONTROLS ========== */
+  .table-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .filter-group {
+    width: 100%;
+  }
+  
+  .filter-select {
+    width: 100%;
+  }
+  
+  .bulk-actions {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .bulk-actions .btn {
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  /* ========== TABLES OPTIMIZATION ========== */
+  .events-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-md);
+  }
+  
+  .events-table table {
+    min-width: 800px;
+  }
+  
+  .events-table th,
+  .events-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.8125rem;
+  }
+  
+  .event-title {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .action-buttons {
+    gap: 0.25rem;
+  }
+  
+  .btn-icon {
+    width: 32px;
+    height: 32px;
+    padding: 0.375rem;
+  }
+  
+  .btn-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* ========== MODAL OPTIMIZATION ========== */
+  .modal-overlay {
+    padding: 0;
+  }
+  
+  .modal-content {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  .modal-content.large {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .modal-header {
+    padding: 1.25rem;
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 10;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  
+  .modal-header h3 {
+    font-size: 1.25rem;
+  }
+  
+  .event-form {
+    padding: 1.25rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    font-size: 0.875rem;
+  }
+  
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .form-checkboxes {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .modal-actions {
+    padding: 1.25rem;
+    position: sticky;
+    bottom: 0;
+    background: var(--white);
+    border-top: 1px solid var(--gray-200);
+    margin: 0 -1.25rem -1.25rem;
+  }
+  
+  .modal-actions .btn {
+    flex: 1;
+  }
+  
+  /* ========== SETTINGS GRID ========== */
+  .settings-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .settings-section {
+    padding: 1.5rem;
+  }
+  
+  .settings-section h3 {
+    font-size: 1.125rem;
+  }
+  
+  .settings-toggle {
+    padding: 1rem;
+  }
+  
+  .toggle-label {
+    font-size: 0.875rem;
+  }
+  
+  .toggle-help {
+    font-size: 0.75rem;
+  }
+  
+  /* ========== DASHBOARD SECTION ========== */
+  .dashboard-section {
+    padding: 1.5rem;
+  }
+  
+  .dashboard-section h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* ========== CATEGORY & STATUS BADGES ========== */
+  .category-badge,
+  .status-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+  }
+  
+  /* ========== SEARCH INPUT ========== */
+  .search-input {
+    width: 100%;
+    min-width: auto;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* ========== DISABLE HOVER EFFECTS ========== */
+  .admin-tab:hover {
+    background: var(--white);
+    color: var(--gray-700);
+    border-color: var(--gray-200);
+  }
+  
+  .admin-tab.active:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+  }
+  
+  .admin-tab:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  .stat-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-xs);
+  }
+  
+  .stat-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  .action-btn:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .action-btn:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  .btn-icon:hover {
+    background: transparent;
+    color: inherit;
+  }
+  
+  .btn-icon:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+  }
+  
+  /* ========== SCROLLBAR STYLING ========== */
+  .events-table::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .events-table::-webkit-scrollbar-track {
+    background: var(--gray-100);
+  }
+  
+  .events-table::-webkit-scrollbar-thumb {
+    background: var(--gray-400);
+    border-radius: 3px;
+  }
+  
+  /* ========== TOUCH TARGETS ========== */
+  .admin-tab,
+  .btn,
+  .btn-icon,
+  .action-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Fix checkbox size - not too big */
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+  }
+  
+  /* Ensure checkbox labels have proper touch area */
+  .checkbox-label,
+  .toggle-label {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  /* ========== SPACING ADJUSTMENTS ========== */
+  .admin-content {
+    padding: 1.25rem;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* ========== INFO GRID ========== */
+  .info-grid {
+    gap: 0.5rem;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  /* ========== RESPONSIVE TYPOGRAPHY ========== */
+  .admin-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .admin-header p {
+    font-size: 1rem;
+  }
+  
+  .content-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* ========== PREVENT HORIZONTAL SCROLL ========== */
+  .admin-panel {
+    overflow-x: hidden;
+  }
+  
+  /* ========== STICKY ELEMENTS ========== */
+  .admin-tabs {
+    position: sticky;
+    top: 70px; /* Below navbar */
+    z-index: 100;
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ========== EXTRA SMALL DEVICES ========== */
+@media (max-width: 480px) {
+  .admin-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .stat-content h3 {
+    font-size: 1.75rem;
+  }
+  
+  .admin-tab {
+    min-width: 100px;
+    padding: 0.625rem 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .admin-tab svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .events-table th,
+  .events-table td {
+    padding: 0.5rem 0.375rem;
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,304 @@
+/* ============================================
+   MOBILE HOVER FIXES - GLOBAL
+   Disables all hover effects on mobile devices
+   ============================================ */
+
+@media (max-width: 768px) {
+  
+  /* ========== EVENTS PAGE ========== */
+  .filter-btn:hover:not(.active) {
+    border-color: var(--gray-200) !important;
+    color: var(--gray-700) !important;
+    background: var(--white) !important;
+  }
+  
+  /* Preserve active state styling */
+  .filter-btn.active {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--white) !important;
+  }
+  
+  .filter-btn:active:not(.active) {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+  }
+  
+  .clear-filters-btn:hover {
+    background: var(--white) !important;
+    color: var(--error) !important;
+  }
+  
+  .clear-filters-btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+  }
+  
+  .clear-search:hover {
+    color: var(--gray-400) !important;
+  }
+  
+  /* ========== NOTIFICATIONS PAGE ========== */
+  .notification-item:hover {
+    background: transparent !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .notification-item:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  .action-btn:hover {
+    background: transparent !important;
+    color: inherit !important;
+    transform: none !important;
+  }
+  
+  .action-btn:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+  }
+  
+  .filter-tab:hover {
+    background: transparent !important;
+    color: inherit !important;
+  }
+  
+  .filter-tab:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  /* ========== PROFILE PAGE ========== */
+  .profile-header:hover {
+    box-shadow: var(--shadow-sm) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: none !important;
+  }
+  
+  .profile-stats:hover {
+    box-shadow: var(--shadow-sm) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: none !important;
+  }
+  
+  .house-badge:hover {
+    box-shadow: var(--shadow-sm) !important;
+    transform: none !important;
+  }
+  
+  .badge-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: var(--gray-200) !important;
+  }
+  
+  .preference-item:hover {
+    background: var(--gray-50) !important;
+    border-color: var(--gray-200) !important;
+  }
+  
+  /* ========== EVENT DETAIL PAGE ========== */
+  .sidebar-card:hover {
+    box-shadow: var(--shadow-xs) !important;
+    border-color: var(--gray-300) !important;
+    transform: none !important;
+  }
+  
+  .gallery-item:hover {
+    transform: none !important;
+  }
+  
+  .gallery-item:hover img {
+    transform: none !important;
+  }
+  
+  .highlight-item:hover {
+    background: transparent !important;
+    transform: none !important;
+  }
+  
+  .live-update-item:hover {
+    background: transparent !important;
+    transform: none !important;
+  }
+  
+  /* ========== MY EVENTS PAGE ========== */
+  .event-item:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: var(--gray-200) !important;
+  }
+  
+  .event-item:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  .tab:hover {
+    background: transparent !important;
+    color: inherit !important;
+  }
+  
+  .tab:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  /* ========== AUTH PAGES ========== */
+  .password-toggle:hover {
+    background: transparent !important;
+    color: inherit !important;
+  }
+  
+  .password-toggle:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+  }
+  
+  .auth-link:hover {
+    color: var(--primary) !important;
+  }
+  
+  /* ========== GENERAL CARDS ========== */
+  .card:hover {
+    box-shadow: var(--shadow-sm) !important;
+    transform: none !important;
+    border-color: var(--gray-300) !important;
+  }
+  
+  .card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  /* ========== GENERAL BUTTONS ========== */
+  .btn:hover {
+    transform: none !important;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+  }
+  
+  .btn-ghost:hover {
+    background: transparent !important;
+    color: var(--gray-600) !important;
+  }
+  
+  .btn-outline:hover {
+    background: var(--white) !important;
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* ========== LINKS ========== */
+  a:hover {
+    transform: none !important;
+  }
+  
+  /* ========== DASHBOARD SECTIONS ========== */
+  .dashboard-section:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: none !important;
+  }
+  
+  /* ========== CAROUSEL CONTROLS ========== */
+  .carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: var(--gray-700) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  .carousel-btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+  }
+  
+  /* ========== CATEGORY CARDS (HomePage) ========== */
+  .category-card:hover {
+    transform: none !important;
+    box-shadow: var(--shadow-sm) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  .category-card:hover::before {
+    opacity: 0 !important;
+  }
+  
+  .category-card:hover .category-icon {
+    transform: none !important;
+    box-shadow: var(--shadow-sm) !important;
+  }
+  
+  .category-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  /* ========== STEP CARDS (HomePage) ========== */
+  .step-card:hover {
+    transform: none !important;
+    box-shadow: var(--shadow-sm) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  .step-card:hover .step-icon {
+    transform: none !important;
+    box-shadow: var(--shadow-sm) !important;
+  }
+  
+  /* ========== METRICS (HomePage) ========== */
+  .metric:hover {
+    transform: none !important;
+    box-shadow: var(--shadow-sm) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  .metric:hover .metric-icon {
+    transform: none !important;
+  }
+  
+  /* ========== TOUCH TARGET SIZES ========== */
+  .navbar-icon-btn,
+  .user-avatar,
+  .action-btn,
+  .quick-action-btn,
+  .password-toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  /* ========== REDUCE ANIMATION DURATION ========== */
+  * {
+    transition-duration: 0.2s !important;
+  }
+  
+  *[class*="animate"],
+  *[class*="transition"] {
+    animation-duration: 0.2s !important;
+  }
+}
+
+/* ========== ACCESSIBILITY - FOCUS INDICATORS ========== */
+@media (max-width: 768px) {
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+  }
+}

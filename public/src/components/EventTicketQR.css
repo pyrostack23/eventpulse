@@ -1,0 +1,110 @@
+.event-ticket-qr {
+  margin: 0;
+}
+
+.ticket-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 2px solid var(--gray-300);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.ticket-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.ticket-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.ticket-status {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid rgba(16, 185, 129, 0.3);
+}
+
+.ticket-details {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.ticket-details h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.ticket-details p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+.ticket-qr-wrapper {
+  background: var(--gray-50);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--gray-200);
+}
+
+.ticket-qr-wrapper svg {
+  display: block;
+}
+
+.ticket-info {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ticket-info p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+.ticket-actions {
+  text-align: center;
+}
+
+.ticket-actions .btn {
+  width: 100%;
+  padding: 0.875rem;
+  font-weight: 600;
+}
+  
+/* Mobile responsive */  
+@media (max-width: 768px) {  
+  .ticket-header {  
+    flex-direction: column;  
+    align-items: flex-start;  
+    gap: 1rem;  
+  }  
+} 
