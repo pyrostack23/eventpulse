@@ -32,7 +32,7 @@ EventPulse is a comprehensive, full-stack event management platform designed spe
 ## 📸 Screenshots
  
 ### Mobile View
-![Mobile Interface](image.png)
+<img src="image.png" alt="Mobile Interface" width="300">
  
 ### Desktop View
 ![Desktop Interface](image-1.png)
