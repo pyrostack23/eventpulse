@@ -391,8 +391,6 @@ If you have any questions or need help with the project:
  
 **Built with ❤️ for BTUI'25 Web Development Competition**
  
-⭐ **Star this repo if you find it helpful!** ⭐
- 
 </div>
  
 ---
@@ -400,6 +398,7 @@ If you have any questions or need help with the project:
 **Last Updated:** November 2025  
 **Version:** 1.0.0  
 **Status:** ✅ Production Ready
+
 
 
 
